@@ -15,7 +15,7 @@ struct ToastModifier: ViewModifier {
     let type: ToastMessageView.ToastType
     
     func body(content: Content) -> some View {
-        ZStack {
+        ZStack(alignment: .topTrailing){
             content
             
             if isVisible {
